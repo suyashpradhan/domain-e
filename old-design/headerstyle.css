@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css?family=Sen&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Sen", sans-serif;
+}
+
+body,
+html {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#centered {
+  /* background-color:#F2F2F2; */
+  /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  width: 929px;
+  /* set to desired width in px or percent */
+  text-align: left;
+  /* optionally you could use "justified" */
+  /* Changing this value will add lines around the centered area */
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+#centered-2 {
+  background-color: #f6f7f7;
+  /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  width: 929px;
+  /* set to desired width in px or percent */
+  text-align: left;
+  /* optionally you could use "justified" */
+  /* Changing this value will add lines around the centered area */
+  margin: 0 auto;
+  padding: 0 20px 20px 20px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+#maindiv {
+  margin-left: 118px;
+  margin-right: 119px;
+}
+
+#center {
+  background-color: #f2f2f2;
+  /* set to desired width in px or percent */
+  text-align: left;
+  /* optionally you could use "justified" */
+  /* Changing this value will add lines around the centered area */
+  margin: 10px;
+  padding: 0px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+#logo {
+  float: left;
+}
+
+#hor-minimalist-b {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  background: #fff;
+  margin: 15px;
+  width: 500px;
+  border-collapse: collapse;
+  text-align: left;
+  border-left: 2px solid #cccccc;
+  border-right: 2px solid #cccccc;
+  border-top: 2px solid #cccccc;
+  border-bottom: 2px solid #cccccc;
+}
+
+#hor-minimalist-b th {
+  font-size: 12px;
+  font-weight: normal;
+  color: #666666;
+  padding: 10px 8px;
+  border-bottom: 2px solid #cccccc;
+}
+
+#hor-minimalist-b td {
+  border-bottom: 1px solid #999999;
+  color: #777777;
+  padding: 6px 8px;
+}
+
+#hor-minimalist-b tbody tr:hover td {
+  color: #111111;
+}
+
+#smalltable {
+  /*font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	*/
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  background: #fff;
+  width: 600px;
+  margin-left: 130px;
+  margin-right: 130px;
+  text-align: center;
+  border-collapse: collapse;
+  border-left: 2px solid #cccccc;
+  border-right: 2px solid #cccccc;
+  border-top: 2px solid #cccccc;
+  border-bottom: 2px solid #cccccc;
+}
+
+#smalltable th {
+  font-size: 12px;
+  font-weight: normal;
+  color: #666666;
+  padding: 10px 8px;
+  border-bottom: 1px solid #cccccc;
+}
+
+#smalltable td {
+  border-bottom: 1px solid #cccccc;
+  color: #777777;
+  padding: 6px 8px;
+}
+
+#smalltable td {
+  color: #111111;
+}
+
+#maintable {
+  /*font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	*/
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  background: #fff;
+  text-align: center;
+  border-collapse: collapse;
+  border-left: 2px solid #cccccc;
+  border-right: 2px solid #cccccc;
+  border-top: 2px solid #cccccc;
+  border-bottom: 2px solid #cccccc;
+}
+
+#maintable th {
+  font-size: 12px;
+  font-weight: normal;
+  color: #666666;
+  padding: 10px 8px;
+  border-bottom: 1px solid #cccccc;
+}
+
+#maintable td {
+  border-bottom: 1px solid #cccccc;
+  color: #777777;
+  padding: 6px 8px;
+}
+
+#maintable td {
+  color: #111111;
+}

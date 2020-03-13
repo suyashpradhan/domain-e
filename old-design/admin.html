@@ -1,0 +1,1253 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <link href="table1.css" type="text/css" rel="stylesheet" />
+    <link href="headerstyle.css" type="text/css" rel="stylesheet" />
+    <script language="javascript">
+        $(document).ready(function () {
+            $("a#select_centre").trigger("click");
+        });
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Admin Home - domain E</title>
+    <link href="http://domain-education.com/domaineducation/domain_new/css/bootstrap.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <style type="text/css">
+        body {
+            background-color: #f6f7f7 !important;
+        }
+
+        img {
+            background-color: #ffffff;
+            border: 2px solid #dbdbdb;
+            -webkit-border-radius: 7px;
+            -moz-border-radius: 7px;
+            color: #000000;
+            font-weight: bold;
+        }
+
+        .btn {
+            /* background: #696969; */
+            /*  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+            background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+            background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+            background-image: -o-linear-gradient(top, #3498db, #2980b9);
+            background-image: linear-gradient(to bottom, #3498db, #2980b9); */
+            /*   -webkit-border-radius: 2;
+            -moz-border-radius: 2; */
+            border-radius: 2px;
+            background: none;
+            border: none;
+            color: #ffffff;
+            font-size: 18px;
+            /* padding: 5px 20px; */
+            text-decoration: none;
+            cursor: pointer;
+            color: #4d4d4d;
+            font-weight: 600;
+        }
+
+        .btn:hover {
+            color: #696969;
+        }
+
+        /* .btn:hover {
+            background: #4d4d4d;
+            color: #fFFf;
+            border: 1px solid #4d4d4d;
+            text-decoration: none;
+        }
+ */
+        .fieldHolder {
+            width: 252px;
+        }
+
+        .textInput2 {
+            width: 300px;
+            border: 1px solid #ccc;
+            color: #000000;
+            padding: 10px 4px;
+            border-radius: 3px;
+            margin: 10px 0;
+        }
+
+        .textInput2:active,
+        .textInput2:focus {
+            border: 1px solid #696969;
+        }
+    </style>
+</head>
+
+<body style="background-color:#DDDDDD">
+    <style type="text/css">
+        .batch_detail {
+            border-collapse: collapse;
+            border: 1px solid #000;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .batch_detail .heading {
+            background-color: #333;
+            color: #FFF;
+            font-size: 13px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .batch_detail .student_heading {
+            background-color: #FFC;
+            color: #000;
+            font-size: 14px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .batch_detail tr td {
+            font-size: 12px;
+        }
+
+        .batch_detail label {
+            margin: 10px 5px;
+            color: #C00;
+        }
+
+        .batch_detail input[type="radio"] {
+            margin: 5px;
+            color: #000000;
+        }
+
+        .batch_detail select {
+            padding: 8px 8px;
+            border: 1px solid #aaa;
+            border-radius: 2px;
+            background-image: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            heigth: 35px;
+            width: 350px;
+            margin-left: 8px;
+            background-color: #fff;
+            margin: 10px 10px 10px 13px;
+        }
+
+        .batch_detail input[type="submit"] {
+            padding: 5px 20px;
+            border: 1px solid #603;
+            background-color: #603;
+            color: #FFF;
+            text-transform: uppercase;
+            font-size: 16px;
+            margin-bottom: 10px;
+            border-radius: 3px;
+        }
+
+        body a:link:after,
+        body a:visited:after {
+            content: "";
+        }
+
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block;
+        }
+
+        fieldset {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+        }
+
+        /*----------------------*/
+
+        body {
+            margin: 0;
+
+        }
+
+        /*----------------------*/
+
+        .cf:before,
+        .cf:after {
+            content: "";
+            display: table;
+        }
+
+        .cf:after {
+            clear: both;
+        }
+
+        .cf {
+            zoom: 1;
+        }
+
+        /*----------------------*/
+
+        header {
+            padding: 8px 30px;
+            border-bottom: 1px solid #fff;
+            background-color: #777;
+            background-image: -webkit-gradient(linear, left top, left bottom, from(#777), to(#555));
+            background-image: -webkit-linear-gradient(top, #777, #555);
+            background-image: -moz-linear-gradient(top, #777, #555);
+            background-image: -ms-linear-gradient(top, #777, #555);
+            background-image: -o-linear-gradient(top, #777, #555);
+            background-image: linear-gradient(top, #777, #555);
+            -moz-box-shadow: 0 -3px 3px rgba(0, 0, 0, .5) inset;
+            -webkit-box-shadow: 0 -3px 3px rgba(0, 0, 0, .5) inset;
+            box-shadow: 0 -3px 3px rgba(0, 0, 0, .5) inset;
+        }
+
+        /*----------------------*/
+        nav .logo {
+            position: relative;
+            float: left;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            position: relative;
+            float: right;
+            background: #eee;
+            border-bottom: 1px solid #fff;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            border-radius: 3px;
+        }
+
+        nav li {
+            float: left;
+        }
+
+
+        nav #signup {
+            border-right: 1px solid #666666;
+            -moz-box-shadow: 1px 0 0 #fff;
+            -webkit-box-shadow: 1px 0 0 #fff;
+            box-shadow: 1px 0 0 #fff;
+        }
+
+        nav #login-trigger,
+        nav #signup a {
+            display: inline-block;
+            *display: inline;
+            *zoom: 1;
+            height: 25px;
+            line-height: 25px;
+            font-weight: bold;
+            padding: 0 8px;
+            text-decoration: none;
+            color: #444;
+            text-shadow: 0 1px 0 #fff;
+        }
+
+        nav #signup a {
+            -moz-border-radius: 0 3px 3px 0;
+            -webkit-border-radius: 0 3px 3px 0;
+            border-radius: 0 3px 3px 0;
+        }
+
+        nav #login-trigger {
+            -moz-border-radius: 3px 0 0 3px;
+            -webkit-border-radius: 3px 0 0 3px;
+            border-radius: 3px 0 0 3px;
+        }
+
+        nav #login-trigger:hover,
+        nav #login .active,
+        nav #signup a:hover {
+            background: #fff;
+        }
+
+        nav #login-content {
+            display: none;
+            position: absolute;
+            top: 24px;
+            right: 0;
+            z-index: 999;
+            background: #fff;
+            background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));
+            background-image: -webkit-linear-gradient(top, #fff, #eee);
+            background-image: -moz-linear-gradient(top, #fff, #eee);
+            background-image: -ms-linear-gradient(top, #fff, #eee);
+            background-image: -o-linear-gradient(top, #fff, #eee);
+            background-image: linear-gradient(top, #fff, #eee);
+            padding: 15px;
+            -moz-box-shadow: 0 2px 2px -1px rgba(0, 0, 0, .9);
+            -webkit-box-shadow: 0 2px 2px -1px rgba(0, 0, 0, .9);
+            box-shadow: 0 2px 2px -1px rgba(0, 0, 0, .9);
+            -moz-border-radius: 3px 0 3px 3px;
+            -webkit-border-radius: 3px 0 3px 3px;
+            border-radius: 3px 0 3px 3px;
+        }
+
+        nav li #login-content {
+            right: 0;
+            width: 400px;
+        }
+
+        /*--------------------*/
+
+        #inputs input {
+            background: #f1f1f1;
+            padding: 6px 5px;
+            margin: 0 0 5px 0;
+            width: 238px;
+            border: 1px solid #ccc;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            border-radius: 3px;
+            -moz-box-shadow: 0 1px 1px #ccc inset;
+            -webkit-box-shadow: 0 1px 1px #ccc inset;
+            box-shadow: 0 1px 1px #ccc inset;
+        }
+
+        #inputs input:focus {
+            background-color: #fff;
+            border-color: #e8c291;
+            outline: none;
+            -moz-box-shadow: 0 0 0 1px #e8c291 inset;
+            -webkit-box-shadow: 0 0 0 1px #e8c291 inset;
+            box-shadow: 0 0 0 1px #e8c291 inset;
+        }
+
+        /*--------------------*/
+
+        #login #actions {
+            margin: 10px 0 0 0;
+        }
+
+        #login #submit {
+            background-color: #d14545;
+            background-image: -webkit-gradient(linear, left top, left bottom, from(#e97171), to(#d14545));
+            background-image: -webkit-linear-gradient(top, #e97171, #d14545);
+            background-image: -moz-linear-gradient(top, #e97171, #d14545);
+            background-image: -ms-linear-gradient(top, #e97171, #d14545);
+            background-image: -o-linear-gradient(top, #e97171, #d14545);
+            background-image: linear-gradient(top, #e97171, #d14545);
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            border-radius: 3px;
+            text-shadow: 0 1px 0 rgba(0, 0, 0, .5);
+            -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+            -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+            border: 1px solid #7e1515;
+            float: left;
+            height: 30px;
+            padding: 0;
+            width: 250px !important;
+            cursor: pointer;
+            font: bold 14px Arial, Helvetica;
+            color: #fff;
+        }
+
+        #login #submit:hover,
+        #login #submit:focus {
+            background-color: #e97171;
+            background-image: -webkit-gradient(linear, left top, left bottom, from(#d14545), to(#e97171));
+            background-image: -webkit-linear-gradient(top, #d14545, #e97171);
+            background-image: -moz-linear-gradient(top, #d14545, #e97171);
+            background-image: -ms-linear-gradient(top, #d14545, #e97171);
+            background-image: -o-linear-gradient(top, #d14545, #e97171);
+            background-image: linear-gradient(top, #d14545, #e97171);
+        }
+
+        #login #submit:active {
+            outline: none;
+            -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+            -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+        }
+
+        #login #submit::-moz-focus-inner {
+            border: none;
+        }
+
+        #login label {
+            font-weight: normal;
+            line-height: 30px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        #login label input {
+            position: relative;
+            top: 2px;
+            right: 2px;
+        }
+
+        /*--------------------*/
+        #about {
+            margin: 15px;
+        }
+
+        #about a {
+            color: #555;
+        }
+
+        .btn-red {
+            font-family: Arial;
+            color: #ffffff;
+            font-size: 12px;
+            background: #ff0000;
+            padding: 5px 10px 5px 10px;
+            text-decoration: none;
+        }
+
+        .btn-green {
+            font-family: Arial;
+            color: #ffffff;
+            font-size: 12px;
+            background: #009c2a;
+            padding: 5px 10px 5px 10px;
+            text-decoration: none;
+        }
+    </style>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <script type="text/javascript" src="fancybox/jquery.min.js"></script>
+    <script src="css/bootstrap.js" type="text/javascript"></script>
+    <script src="css/app.js" type="text/javascript"></script>
+    <script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+    <script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+    <noscript>
+        <p align="center" style="color:#333333">Javascript is disabled Please Enable it for proper functioning of the
+            website.</p>
+    </noscript>
+    <link rel="stylesheet" href="fancybox/jquery-ui.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/sticky-footer-navbar.css" />
+    <script src="fancybox/jquery-ui.js" type="text/javascript"></script>
+    <script type="text/javascript" src="multiple_datepicker/jquery-ui.multidatespicker.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#datepicker1").datepicker();
+        });
+        $(function () {
+            $("#datepicker2").datepicker();
+        });
+        $(function () {
+            $("#datepicker3").datepicker();
+        });
+        $(function () {
+            $("#datepicker4").datepicker();
+        });
+        $(function () {
+            $("#datepicker5").datepicker();
+        });
+        $(function () {
+            $("#datepicker6").datepicker();
+        });
+        $(function () {
+            $("#datepicker7").datepicker();
+        });
+        $(function () {
+            $("#datepicker8").datepicker();
+        });
+    </script>
+
+    <script type="text/javascript">
+        $('#multi_date').multiDatesPicker();
+
+        $(document).ready(function () {
+            $("a.pop2").fancybox({
+                'overlayColor': '#000',
+                'overlayOpacity': 0.9
+            });
+            $("a.pop").fancybox({
+                'type': 'iframe',
+                'autoScale': true,
+                'autoDimensions': true,
+                'fitToView': true,
+            });
+            $("a.attendance_popup").fancybox({
+                'type': 'iframe',
+                'width': 895,
+                'height': 460,
+                'href': this.href,
+                'showCloseButton': true,
+                'hideOnOverlayClick': false,
+                'hideOnContentClick': false,
+            });
+            $("a.test_schedule").fancybox({
+                'type': 'iframe',
+                'width': 650,
+                'height': 355,
+                'href': this.href,
+                'showCloseButton': true,
+                'hideOnOverlayClick': false,
+                'hideOnContentClick': false,
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#login-trigger').click(function () {
+                $(this).next('#login-content').slideToggle();
+                $(this).toggleClass('active');
+                if ($(this).hasClass('active')) $(this).find('span').html('&#x25B2;')
+                else $(this).find('span').html('&#x25BC;')
+            })
+        });
+    </script>
+    <script language="javascript">
+        $(document).ready(function () {
+            $("a#select_centre").trigger("click");
+        });
+    </script>
+    <link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.4.css" />
+    <script type="text/javascript">
+        /* idleMax = 15; // Logout after 10 minutes of IDLE
+   idleTime = 0;
+   $(document).ready(function () {
+       var idleInterval=setInterval("timerIncrement()",60000); 
+       $(this).mousemove(function (e) {idleTime = 0; $('#time_left').html('&nbsp;'); });
+       $(this).keypress(function (e) { idleTime = 0; $('#time_left').html('&nbsp;'); });
+   })
+   function timerIncrement() {
+       idleTime = idleTime + 1;
+       idle_left=idleMax-idleTime;
+       if(idle_left == idleMax-1)
+       {
+         $('#time_left').html();
+       }
+       $('#time_left').html('<b>Time left for Auto Logout is: '+idle_left+' min</b>&nbsp;&nbsp;&nbsp;');
+           if (idleTime >= idleMax) { 
+           window.location="logout.php";
+           }
+   } */
+    </script>
+    <LINK REL="SHORTCUT ICON" HREF="Domain_image/domainlogo.png">
+    <a href="select_centre.php" id="select_centre" class="test_schedule"></a>
+    <header class="cf">
+        <nav>
+            <span class="logo"><a href="admin_home.php"><img src="images/domain-e-headerlogo.png" /></a></span>
+            <ul>
+                <li id="signup">
+                    <a href="#">Center Code : </a>
+                </li>
+                <li id="signup">
+                    <a href="#">Session : </a>
+                </li>
+                <li id="signup">
+                    <a href="#">Welcome Ankush</a>
+                </li>
+                <li id="signup">
+                    <a href="admin_home.php">Home</a>
+                </li>
+                <li id="signup">
+                    <a href="logout.php">Logout</a>
+                </li>
+                <li id="login">
+                    <a id="login-trigger" href="#">
+                        Change Center
+                    </a>
+                    <div id="login-content">
+                        <form action="" method="post">
+                            <fieldset id="actions">
+                                <label><b>Session: </b></label>
+                                <label><input type="radio" name="select_session" value="2014"> 14-15</label>
+                                <label><input type="radio" name="select_session" value="2015"> 15-16</label>
+                                <label><input type="radio" name="select_session" value="2016"> 16-17</label>
+                                <label><input type="radio" name="select_session" value="2017"> 17-18</label>
+                                <label><input type="radio" name="select_session" value="2018"> 18-19</label>
+                                <label><input type="radio" name="select_session" value="2019" checked="checked">
+                                    19-20</label>
+                                <label><input type="radio" name="select_session" value="2020"> 20-21</label>
+                            </fieldset>
+                            <fieldset id="actions">
+                                <label><b>Center: </b></label>
+                                <label><input type="radio" name="select_centre" id="MNC" value="MNC">MNC</label>
+                                <!-- <label><input type="radio" name="select_centre" id="Kunhari" value="Kunhari">Kunhari</label> -->
+                                <label><input type="radio" name="select_centre" id="Talwandi"
+                                        value="Talwandi">Talwandi</label>
+                                <label><input type="radio" name="select_centre" id="Online"
+                                        value="Online">Online</label>
+                                <label><input type="radio" name="select_centre" id="Combine"
+                                        value="Combine">Combine</label>
+                            </fieldset>
+                            <fieldset id="input">
+                                <input type="submit" id="sub23" name="sub23" value="Submit"
+                                    class="btn btn-success btn-block btn-sm">
+                            </fieldset>
+                        </form>
+                    </div>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <script language='javascript'>
+        $('#').attr('checked', 'checked');
+    </script>
+    <div style="padding: 15px ;">
+        <div style="float:left">
+            <a href="fees_calculation.php" class="pop">Fees Calculator</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="test_schedule_form.php" class="test_schedule">Generate Test Schedule</a>
+        </div>
+
+        <div style="float:right">
+            <a href="attendance_sheet_form.php" class="attendance_popup">Generate Attendance Sheet</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+
+            <a href="send_daily_sms.php" class="attendance_popup">Send SMS</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+
+            <a href="lecture_schedule.php" target="_blank">View Lecture Schedule</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="view_test_schedule.php" target="_blank">View Test Schedule</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;</div>
+    </div>
+    <br />
+
+    <h2 align="center">
+        <font color="#3498db"><u>Welcome To The Counselor Panel Of domain-E</u></font>
+    </h2>
+    <div id="centered-2">
+        <table width="800px" align="center">
+            <tr>
+                <td>
+                    <h1 class="table-head">Add Section</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <i class="fas fa-arrow-right"></i> <a href="addprofile.php">Add New Profile</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <i class="fas fa-arrow-right"></i> <a href="add_new_enquiry.php">New Enquiry Form</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h1 class="table-head">Upgrade / Update Section</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <i class="fas fa-arrow-right"></i> <a href="fee_status_update.php">Upgrade Course/Pay Next
+                        Installment</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <i class="fas fa-arrow-right"></i> <a href="testoptions.php">Student Test Marks Entry / View</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <input type="text" id="search_profile" name="search_profile" class="textInput2"
+                        placeholder="Search for Enrolment ID/Student Name/Mobile Number" align="center" />
+                    &nbsp;
+                    <input type="button" id="sub12" name="sub12" class="btn" value="Update Profile Detail" />
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <input type="text" id="search" name="search" class="textInput2"
+                        placeholder="Search for Enquiry ID/Enquiry Name" align="center" /> &nbsp;
+                    <input type="button" id="sub" name="sub" class="btn" value="Update Enquiry Detail" />
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <input type="text" id="search_sec" name="search_sec" class="textInput2"
+                        placeholder="Search for Enquiry ID/Enquiry Name" align="center" /> &nbsp;
+                    <input type="button" id="sub_sec" name="sub_sec" class="btn" value="Update IX/X Enquiry Detail" />
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <input type="text" id="roll_number" name="roll_number" class="textInput2"
+                        placeholder="Enter Roll No" align="center" style="width:120px" /> &nbsp;&nbsp;
+                    <input type="text" id="search_test" name="search_test" class="textInput2"
+                        placeholder="Search for Test" align="center" style="width:200px" /> &nbsp;
+                    <input type="button" id="sub_test" name="sub_test" class="btn" value="Search Test" />
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <h3>
+                        <font color="#0033FF"><u onclick="batch_detail();" style="cursor:pointer"
+                                class="table-head ">Batch
+                                Detail (No. of
+                                Student / Contact Detail) <i class="fas fa-external-link-alt"></i></u> </font>
+                    </h3>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table width="100%" id="batch_detail" name="batch_detail" style="display:none">
+                        <tr>
+                            <td>
+                                * Center Code &nbsp;&nbsp;&nbsp;
+                                <select name="code" id="code">
+                                    <option>Kota01</option>
+                                    <option>Kota02</option>
+                                    <option>Kota03</option>
+                                </select>
+                                &nbsp;&nbsp;&nbsp;
+                                * Batch Code
+                                &nbsp;&nbsp;&nbsp;
+                                <select name="batch" id="batch" onblur="get_fee();">
+                                    <option value="m">Classroom</option>
+                                    <option value="t">TestQ CBSE Mega</option>
+                                    <option value="ts">TestQ CBSE Standard</option>
+                                    <option value="tm">TestQ CBSE Mini</option>
+                                    <option value="o">C.C Prime</option>
+                                    <option value="ob">C.C Basic</option>
+                                    <option value="p">Practicals</option>
+                                    <option value="s">Study Material</option>
+                                </select>
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                <select name="batchno" id="batchno" onclick="get_fee();">
+                                    <option value="01">A</option>
+                                    <option value="02">B</option>
+                                    <option value="03">C</option>
+                                    <option value="04">D</option>
+                                    <option value="05">E</option>
+                                    <option value="06">F</option>
+                                    <option value="07">G</option>
+                                    <option value="08">H</option>
+                                    <option value="09">I</option>
+                                    <option value="010">J</option>
+                                    <option value="011">K</option>
+                                    <option value="012">L</option>
+                                    <option value="013">M</option>
+                                    <option value="014">N</option>
+                                    <option value="015">O</option>
+                                    <option value="016">P</option>
+                                    <option value="017">Q</option>
+                                    <option value="018">R</option>
+                                    <option value="019">S</option>
+                                    <option value="020">T</option>
+                                </select>
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="radio" name="class" value="12" checked="checked"
+                                    onclick="change_subject()" />
+                                XII
+                                <input type="radio" name="class" value="11" onclick="change_subject()" /> XI
+                                <input type="radio" name="class" value="10" onclick="change_subject()" /> X
+                                <input type="radio" name="class" value="09" onclick="change_subject()" /> IX
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+
+                                <div id="subject_div">
+                                    <input type="radio" name="subject1" id="subject1" value="p" onclick="get_fee();"
+                                        ondblclick="fun_uncheck('subject1');" /> P
+                                    <input type="radio" name="subject1" id="subject2" value="c" onclick="get_fee();"
+                                        ondblclick="fun_uncheck('subject2');" /> C
+                                    <input type="radio" name="subject1" id="subject3" value="m" onclick="get_fee();"
+                                        ondblclick="fun_uncheck('subject3');" /> M
+                                    <input type="radio" name="subject1" id="subject4" value="e" onclick="get_fee();"
+                                        ondblclick="fun_uncheck('subject4');" /> E
+                                    <input type="radio" name="subject1" id="subject5" value="b" onclick="get_fee();"
+                                        ondblclick="fun_uncheck('subject5');" /> B
+                                    <input type="radio" name="subject1" id="subject7" value="h" onclick="get_fee();"
+                                        ondblclick="fun_uncheck('subject7');" /> Hindi
+                                    <input type="radio" name="subject1" id="subject8" value="u" onclick="get_fee();"
+                                        ondblclick="fun_uncheck('subject8');" /> Phy. Edu.
+                                    <input type="radio" name="subject1" id="subject6" value="f" onclick="get_fee();"
+                                        ondblclick="fun_uncheck('subject6');" /> Full
+                                </div>
+                                &nbsp;&nbsp;&nbsp;
+                                <b>Board:</b>&nbsp;&nbsp; <input type="radio" name="board" id="cbse" value="cbse"
+                                    onclick="get_fee();" /> CBSE &nbsp;&nbsp;&nbsp; <input type="radio" name="board"
+                                    id="rbse" value="rbse" onclick="get_fee();" /> RBSE &nbsp;&nbsp;&nbsp; <input
+                                    type="radio" name="board" id="other" value="other" onclick="get_fee();" /> Other
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+    <table border="1" id="maintable" align="center"></table>
+    <br /><br>
+    <footer class="footer bg-black text-center">
+        <div class="container ">
+            <p class="text-muted ">Copyright &copy; 2015 domain Edutech Private Limited. </p>
+        </div>
+    </footer>
+</body>
+
+</html>
+<script language="javascript">
+    function get_status(p, q, r, s) {
+        $.ajax({
+            type: 'POST',
+            url: 'get_test_status.php?test_id=' + p + '&roll_no=' + q + '&subject=' + r + '&class=' + s,
+            data: '',
+            beforeSend: function () {},
+            success: function (response) {
+                alert(response);
+            }
+        });
+    }
+
+    function change_subject() {
+        var class1 = $("input[name='class']:checked").val();
+        if (class1 == '10' || class1 == '09') {
+            $('#subject_div').html(
+                '<input type="radio" name="subject1" id="subject1" value="p" onclick="get_fee()" ondblclick="fun_uncheck(\'subject1\')"/> Sci <input type="radio" name="subject1" id="subject2" value="m" onclick="get_fee()" ondblclick="fun_uncheck(\'subject2\')"/> M <input type="radio" name="subject1" id="subject3" value="e" onclick="get_fee()" ondblclick="fun_uncheck(\'subject3\')"/> E <input type="radio" name="subject1" id="subject4" value="g" onclick="get_fee()" ondblclick="fun_uncheck(\'subject4\')"/> SST <input type="radio" name="subject1" id="subject5" value="h" onclick="get_fee()" ondblclick="fun_uncheck(\'subject5\')"/> Hindi <input type="radio" name="subject1" id="subject6" value="a" onclick="get_fee()" ondblclick="fun_uncheck(\'subject6\')"/> NTSE <input type="radio" name="subject1" id="subject7" value="f" onclick="get_fee()" ondblclick="fun_uncheck(\'subject7\')"/> Full'
+            );
+        } else {
+            $('#subject_div').html(
+                '<input type="radio" name="subject1" id="subject1" value="p" onclick="get_fee()" ondblclick="fun_uncheck(\'subject1\')"/> P <input type="radio" name="subject1" id="subject2" value="c" onclick="get_fee()" ondblclick="fun_uncheck(\'subject2\')"/> C <input type="radio" name="subject1" id="subject3" value="m" onclick="get_fee()" ondblclick="fun_uncheck(\'subject3\')"/> M <input type="radio" name="subject1" id="subject4" value="e" onclick="get_fee()" ondblclick="fun_uncheck(\'subject4\')"/> E <input type="radio" name="subject1" id="subject5" value="b" onclick="get_fee()" ondblclick="fun_uncheck(\'subject5\')"/> B <input type="radio" name="subject1" id="subject7" value="h" onclick="get_fee()" ondblclick="fun_uncheck(\'subject7\')"/> Hindi <input type="radio" name="subject1" id="subject8" value="u" onclick="get_fee()" ondblclick="fun_uncheck(\'subject8\')"/> Phy. Edu. <input type="radio" name="subject1" id="subject6" value="f" onclick="get_fee()" ondblclick="fun_uncheck(\'subject6\')"/> Full'
+            );
+        }
+    }
+
+    function top_enquiry() {
+        $.ajax({
+            type: 'POST',
+            url: 'top_enquiry.php',
+            data: '',
+            beforeSend: function () {
+                $('#maintable').html(
+                    "<tr width='300' height='225' align='center'><td width='300' height='225' align='center'><img src='loader.gif' align='center' width='300' height='225'></tr>"
+                )
+            },
+            success: function (response) {
+                $('#maintable').html(response);
+            }
+        });
+    }
+
+    function top_fees_collection() {
+        $.ajax({
+            type: 'POST',
+            url: 'top_fees_collection.php',
+            data: '',
+            beforeSend: function () {
+                $('#maintable').html(
+                    "<tr width='300' height='225' align='center'><td width='300' height='225' align='center'><img src='loader.gif' align='center' width='300' height='225'></tr>"
+                )
+            },
+            success: function (response) {
+                $('#maintable').html(response);
+            }
+        });
+    }
+
+    function top_registration() {
+        $.ajax({
+            type: 'POST',
+            url: 'top_registration.php',
+            data: '',
+            beforeSend: function () {
+                $('#maintable').html(
+                    "<tr width='300' height='225' align='center'><td width='300' height='225' align='center'><img src='loader.gif' align='center' width='300' height='225'></tr>"
+                )
+            },
+            success: function (response) {
+                $('#maintable').html(response);
+            }
+        });
+    }
+
+    function get_number_students() {
+        var student = "";
+        var month12 = $('#month_wise').val();
+        for (var i = 1; i <= 7; i++) {
+            if ($('#p' + i).is(":checked")) {
+                student = student + $('#p' + i).val();
+            }
+        }
+        $.ajax({
+            type: 'POST',
+            url: 'get_number_student_comb.php?id=' + student + '&month=' + month12,
+            data: '',
+            beforeSend: function () {
+                $('#maintable').html(
+                    "<tr width='300' height='225' align='center'><td width='300' height='225' align='center'><img src='loader.gif' align='center' width='300' height='225'></tr>"
+                )
+            },
+            success: function (response) {
+                $('#maintable').html(response);
+            }
+        });
+    }
+
+    $("#search_test").keyup(function (event) {
+        if (event.keyCode == 13) {
+            $('#sub_test').click();
+        }
+    });
+
+    $('#sub_test').click(function () {
+        var roll_number = $('#roll_number').val();
+        var search_test = $('#search_test').val();
+        if (search_test == '') {
+            window.location.href = 'view_test_paper.php';
+        } else {
+            $('#display_table').hide();
+            $.ajax({
+                type: 'POST',
+                url: 'search_test.php?id=' + search_test + '&roll_number=' + roll_number,
+                data: '',
+                beforeSend: function () {
+                    $('#maintable').html(
+                        "<tr width='300' height='225' align='center'><td width='300' height='225' align='center'><img src='loader.gif' align='center' width='300' height='225'></tr>"
+                    )
+                },
+                success: function (response) {
+                    $('#maintable').html(response);
+                }
+            });
+        }
+    });
+
+    $("#search").keyup(function (event) {
+        if (event.keyCode == 13) {
+            $('#sub').click();
+        }
+    });
+
+    $("#search_sec").keyup(function (event) {
+        if (event.keyCode == 13) {
+            $('#sub_sec').click();
+        }
+    });
+
+    $("#search_profile").keyup(function (event) {
+        if (event.keyCode == 13) {
+            $('#sub12').click();
+        }
+    });
+
+    $('#sub').click(function () {
+        $('#maintable').html('');
+        var searchtext = $('#search').val();
+        if (searchtext == '') {
+            window.location.href = 'update_enquiry_list.php';
+        }
+        $.ajax({
+            type: 'POST',
+            url: 'updateenquirysearch.php?id=' + searchtext,
+            data: '',
+            beforeSend: function () {
+                $('#maintable').html(
+                    "<tr width='300' height='225' align='center'><td width='300' height='225' align='center'><img src='loader.gif' align='center' width='300' height='225'></tr>"
+                )
+            },
+            success: function (response) {
+                $('#maintable').html(response);
+            }
+        });
+    });
+
+
+    $('#sub_sec').click(function () {
+        $('#maintable').html('');
+        var searchtext = $('#search_sec').val();
+        if (searchtext == '') {
+            window.location.href = 'update_enquiry_sec_list.php';
+        }
+        $.ajax({
+            type: 'POST',
+            url: 'updateenquirysearch_sec.php?id=' + searchtext,
+            data: '',
+            beforeSend: function () {
+                $('#maintable').html(
+                    "<tr width='300' height='225' align='center'><td width='300' height='225' align='center'><img src='loader.gif' align='center' width='300' height='225'></tr>"
+                )
+            },
+            success: function (response) {
+                $('#maintable').html(response);
+            }
+        });
+    });
+
+
+    $('#sub12').click(function () {
+        $('#maintable').html('');
+        var searchtext = $('#search_profile').val();
+        if (searchtext == '') {
+            window.location.href = 'updateprofile.php';
+        }
+        $.ajax({
+            type: 'POST',
+            url: 'updateprofilesearch.php?id=' + searchtext,
+            data: '',
+            beforeSend: function () {
+                $('#maintable').html(
+                    "<tr width='300' height='225' align='center'><td width='300' height='225' align='center'><img src='loader.gif' align='center' width='300' height='225'></tr>"
+                )
+            },
+            success: function (response) {
+                $('#maintable').html(response);
+            }
+        });
+    });
+
+    function enquiry_process(p) {
+        var date1 = '';
+        var date2 = '';
+        if (p == 'custom') {
+            date1 = $('#datepicker1').val();
+            date2 = $('#datepicker2').val();
+        }
+        $('#maintable').html('');
+        var searchtext = p.trim();
+        $.ajax({
+            type: 'POST',
+            url: 'enquiry_detail.php?id=' + searchtext + '&date1=' + date1 + '&date2=' + date2,
+            data: '',
+            beforeSend: function () {
+                $('#maintable').html(
+                    "<tr width='300' height='225' align='center'><td width='300' height='225' align='center'><img src='loader.gif' align='center' width='300' height='225'></tr>"
+                )
+            },
+            success: function (response) {
+                $('#maintable').html(response);
+            }
+        });
+    }
+
+    function enquiry_process_secondary(p) {
+        var date1 = '';
+        var date2 = '';
+        if (p == 'custom') {
+            date1 = $('#datepicker7').val();
+            date2 = $('#datepicker8').val();
+        }
+        $('#maintable').html('');
+        var searchtext = p.trim();
+        $.ajax({
+            type: 'POST',
+            url: 'enquiry_detail_secondary.php?id=' + searchtext + '&date1=' + date1 + '&date2=' + date2,
+            data: '',
+            beforeSend: function () {
+                $('#maintable').html(
+                    "<tr width='300' height='225' align='center'><td width='300' height='225' align='center'><img src='loader.gif' align='center' width='300' height='225'></tr>"
+                )
+            },
+            success: function (response) {
+                $('#maintable').html(response);
+            }
+        });
+    }
+
+    function reg_process(p) {
+        var date1 = "";
+        var date2 = "";
+        if (p == 'custom') {
+            var date1 = $('#datepicker3').val();
+            var date2 = $('#datepicker4').val();
+        }
+        $('#maintable').html('');
+        var searchtext = p.trim();
+        $.ajax({
+            type: 'POST',
+            url: 'profile_detail.php?id=' + searchtext + '&date1=' + date1 + '&date2=' + date2,
+            data: '',
+            beforeSend: function () {
+                $('#maintable').html(
+                    "<tr width='300' height='225' align='center'><td width='300' height='225' align='center'><img src='loader.gif' align='center' width='300' height='225'></tr>"
+                )
+            },
+            success: function (response) {
+                //alert(response);
+                $('#maintable').html(response);
+            }
+        });
+    }
+
+    function comparison_record() {
+        var month12 = $('#month').val();
+        $('#maintable').html('');
+        $.ajax({
+            type: 'POST',
+            url: 'comparison_sheet.php?month12=' + month12,
+            data: '',
+            beforeSend: function () {
+                $('#maintable').html(
+                    "<tr width='300' height='225' align='center'><td width='300' height='225' align='center'><img src='loader.gif' align='center' width='300' height='225'></tr>"
+                )
+            },
+            success: function (response) {
+                //alert(response);
+                $('#maintable').html(response);
+            }
+        });
+    }
+
+    function comparison_record_combine() {
+        var month12 = $('#month_combine').val();
+        $('#maintable').html('');
+        $.ajax({
+            type: 'POST',
+            url: 'comparison_sheet_combine.php?month12=' + month12,
+            data: '',
+            beforeSend: function () {
+                $('#maintable').html(
+                    "<tr width='300' height='225' align='center'><td width='300' height='225' align='center'><img src='loader.gif' align='center' width='300' height='225'></tr>"
+                )
+            },
+            success: function (response) {
+                //alert(response);
+                $('#maintable').html(response);
+            }
+        });
+    }
+
+    function comparison_record_sec() {
+        var month12 = $('#month_sec').val();
+        $('#maintable').html('');
+        $.ajax({
+            type: 'POST',
+            url: 'comparison_sheet_sec.php?month12=' + month12,
+            data: '',
+            beforeSend: function () {
+                $('#maintable').html(
+                    "<tr width='300' height='225' align='center'><td width='300' height='225' align='center'><img src='loader.gif' align='center' width='300' height='225'></tr>"
+                )
+            },
+            success: function (response) {
+                //alert(response);
+                $('#maintable').html(response);
+            }
+        });
+    }
+
+    function enquiry_comparison_record() {
+        var month12 = $('#month_enq').val();
+        $('#maintable').html('');
+        $.ajax({
+            type: 'POST',
+            url: 'enquiry_comparison_sheet.php?month12=' + month12,
+            data: '',
+            beforeSend: function () {
+                $('#maintable').html(
+                    "<tr width='300' height='225' align='center'><td width='300' height='225' align='center'><img src='loader.gif' align='center' width='300' height='225'></tr>"
+                )
+            },
+            success: function (response) {
+                //alert(response);
+                $('#maintable').html(response);
+            }
+        });
+    }
+
+    function batch_detail() {
+        if (!$("#batch_detail").is(':hidden')) {
+            $('#batch_detail').hide();
+        } else {
+            $('#batch_detail').show();
+        }
+    }
+
+    function comparison_detail() {
+        if (!$("#comparison_detail").is(':hidden')) {
+            $('#comparison_detail').hide();
+        } else {
+            $('#comparison_detail').show();
+        }
+    }
+
+    function get_fee() {
+        var course = ($('#batch').val());
+        var code = ($('#code').val());
+        var batchno = ($('#batchno').val());
+        if (batchno == '') {
+            var batch_status = 'incomplete';
+        } else {
+            var batch_status = 'complete';
+        }
+        var class1 = $('input:radio[name=class]:checked').val();
+        var subject = $('input:radio[name=subject1]:checked').val();
+        var board_check = $('input[name="board"]:checked').val();
+        var board = '';
+        if (board_check == 'cbse') {
+            board = 'CBSE';
+        } else if (board_check == 'rbse') {
+            board = 'RBSE';
+        } else if (board_check == 'other') {
+            board = 'Other';
+        } else {
+            board = '';
+        }
+
+        var batch_code = code + '-01' + course + class1 + subject + '-' + batchno;
+        if (subject == 'f') {
+            var batch_code = code + '-01' + course + class1 + '_' + '-' + batchno;
+        } else {
+            var batch_code = code + '-01' + course + class1 + subject + '-' + batchno;
+        }
+        $('#maintable').html('');
+        $.ajax({
+            type: 'POST',
+            url: 'batch_student_detail.php?batch=' + batch_code + '&board=' + board + '&batch_status=' +
+                batch_status,
+            data: '',
+            beforeSend: function () {
+                $('#maintable').html(
+                    "<tr width='300' height='225' align='center'><td width='300' height='225' align='center'><img src='loader.gif' align='center' width='300' height='225'></tr>"
+                )
+            },
+            success: function (response) {
+                $('#maintable').html(response);
+            }
+        });
+    }
+
+    function fun_uncheck(p) {
+        if (document.getElementById(p).checked == true) {
+            document.getElementById(p).checked = false;
+        }
+        get_fee();
+    }
+
+    function financial_process(p) {
+        var date1 = '';
+        var date2 = '';
+        if (p == 'custom') {
+            date1 = $('#datepicker5').val();
+            date2 = $('#datepicker6').val();
+        }
+        $('#maintable').html('');
+        var searchtext = p.trim();
+        $.ajax({
+            type: 'POST',
+            url: 'financial_detail.php?id=' + searchtext + '&date1=' + date1 + '&date2=' + date2,
+            data: '',
+            beforeSend: function () {
+                $('#maintable').html(
+                    "<tr width='300' height='225' align='center'><td width='300' height='225' align='center'><img src='loader.gif' align='center' width='300' height='225'></tr>"
+                )
+            },
+            success: function (response) {
+                $('#maintable').html(response);
+            }
+        });
+    }
+</script>

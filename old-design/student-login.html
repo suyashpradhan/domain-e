@@ -1,0 +1,953 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <LINK REL="SHORTCUT ICON" HREF="Domain_image/domainlogo.png">
+    <link href="table1.css" type="text/css" rel="stylesheet" />
+    <link href="headerstyle.css" type="text/css" rel="stylesheet" />
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Login Page</title>
+    <style type="text/css">
+        html {
+            height: 100%;
+            margin-bottom: 1px;
+        }
+
+        body {
+            margin: 0;
+            line-height: 135%;
+        }
+
+        form {
+            margin: 0;
+            padding: 0;
+        }
+
+        body.f-small,
+        body#ff-optima.f-small,
+        body#ff-georgia.f-small {
+            font-size: 14px;
+        }
+
+        body,
+        body.f-default {
+            font-size: 12px;
+        }
+
+        body#ff-optima,
+        body#ff-optima.f-default {
+            font-size: 13px;
+        }
+
+        body#ff-georgia,
+        body#ff-georgia.f-default {
+            font-size: 13px;
+        }
+
+        body.f-large,
+        body#ff-optima.f-large,
+        body#ff-georgia.f-large {
+            font-size: 14px;
+        }
+
+        p {
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .clr {
+            clear: both;
+        }
+
+        .rokradios,
+        .rokchecks {
+            padding: 2px 5px 0 22px;
+            line-height: 100%;
+        }
+
+        /* Top Bar */
+        .top-bar-padding {
+            padding: 6px 20px;
+            overflow: hidden;
+        }
+
+        #top-bar h3 {
+            padding: 0;
+            margin-bottom: 15px;
+        }
+
+        .date-block {
+            width: 250px;
+            font-weight: bold;
+            float: left;
+            color: #DF0000
+        }
+
+        #lock-button {
+            height: 16px;
+            float: right;
+            text-align: left;
+            line-height: 16px;
+            position: relative;
+        }
+
+        #lock-button #lock-icon {
+            width: 14px;
+            height: 16px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            padding: 0;
+            margin: 0;
+        }
+
+        #lock-button span {
+            font-size: 13px;
+            padding-left: 20px;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        #lock-button:hover {
+            text-decoration: none;
+        }
+
+        #accessibility {
+            height: 16px;
+            float: right;
+            margin-left: 10px;
+            width: 110px;
+        }
+
+        .textsizer-desc {
+            display: block;
+            float: right;
+            text-align: right;
+            font-size: 12px;
+            margin-right: 6px;
+            font-weight: bold;
+            line-height: 16px;
+        }
+
+        #accessibility a {
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        #accessibility #buttons {
+            float: right;
+            width: 36px;
+            height: 15px;
+            overflow: hidden;
+        }
+
+        #accessibility .button {
+            display: block;
+            float: right;
+            width: 15px;
+            height: 15px;
+        }
+
+        #accessibility a.small .button {
+            margin-right: 4px;
+        }
+
+        .topbar-strip {
+            overflow: hidden;
+            padding-bottom: 2px;
+        }
+
+        .topbar-left-mod {
+            float: left;
+            width: 48%;
+            padding: 15px 0;
+        }
+
+        .topbar-right-mod {
+            float: right;
+            width: 48%;
+            padding: 15px 0;
+            text-align: right;
+        }
+
+
+        #header-overlay {
+            padding: 15px 0 10px 0;
+            overflow: hidden;
+        }
+
+
+        /* Header */
+        #top-bar {
+            background: #C4C4C3;
+            color: #333;
+        }
+
+        #top-bar a,
+        #top-bar h3 {
+            color: #333;
+        }
+
+        #top-bar a:hover {
+            color: #fff;
+        }
+
+        #header {
+            background: #fff url(../images/style2/header-bg.png) 0 0 repeat-x;
+        }
+
+        #header-overlay {
+            background: none;
+        }
+
+        #logo {
+            background: url(style2/domain-e-headerlogo.png) 0 0 no-repeat;
+        }
+
+        #header {
+            background: #fff url(style2/header-bg.png) 0 0 repeat-x;
+        }
+
+        #header-overlay {
+            background: none;
+        }
+
+        #header-overlay {
+            padding: 15px 0 10px 0;
+            overflow: hidden;
+        }
+
+        /*.searchmod-top {background:url(style2/searchmod-top.png) 0 0 no-repeat;}
+.searchmod-main {background:url(style2/searchmod-main.png) 0 100% no-repeat;}
+#searchmod {background:url(style2/searchmod-input.png) 0 0 no-repeat;}
+#searchmod-surround .rokradios {background: url(style2/drop-arrow.png) 4px 1px no-repeat;color: #333;}
+#searchmod-surround .rokradios-active {background:url(style2/drop-arrow.png) 4px -116px no-repeat;}*/
+        a.large .button {
+            background: url(style2/topbar-buttons.png) 0 0 no-repeat;
+        }
+
+        a.small .button {
+            background: url(style2/topbar-buttons.png) -15px 0 no-repeat;
+        }
+
+        #lock-icon {
+            background: url(style2/topbar-buttons.png) -52px 0 no-repeat;
+        }
+
+        #lock-icon.login {
+            background: url(style2/topbar-buttons.png) -32px 0 no-repeat;
+        }
+
+
+        .wrapper {
+            position: relative;
+        }
+
+        div.wrapper {
+            margin: 0 auto;
+            width: 979px;
+            padding: 0;
+        }
+
+
+        /* Header */
+        #logo {
+            width: 261px;
+            height: 54px;
+        }
+
+        #logo {
+            float: left;
+            position: relative;
+            margin-left: 15px;
+        }
+
+        .logo-text {
+            position: absolute;
+            left: 72px;
+            top: 50px;
+            font-size: 16px;
+        }
+
+        #logo:hover {
+            text-decoration: none;
+        }
+
+        #header-overlay {
+            padding: 15px 0 10px 0;
+            overflow: hidden;
+        }
+
+        .searchmod-top {
+            height: 12px;
+            width: 250px;
+        }
+
+        .searchmod-main {
+            overflow: hidden;
+            padding: 0 10px 10px 10px;
+        }
+
+        #searchmod-surround .rokradios {
+            margin-top: 2px;
+        }
+
+        #searchmod-surround h3 {
+            font-size: 12px;
+            color: #fff;
+            margin: 0;
+            padding: 0 0 6px 6px;
+        }
+
+        #searchmod-surround {
+            float: right;
+            margin-right: 15px;
+        }
+
+        #searchmod {
+            width: 230px;
+        }
+
+        #searchmod .inputbox {
+            background: none;
+            border: 0;
+            padding: 4px 0 4px 5px;
+            font-size: 13px;
+            line-height: 20px;
+            width: 223px;
+            height: 18px;
+        }
+
+        #searchmod .search_options {
+            padding-top: 6px;
+            padding-left: 4px;
+        }
+
+
+
+        /*horizontal menu */
+        body {
+            background: #fff;
+        }
+
+        #page-bg {
+            background: #DCDCDC url(style2/header-bg2.png) 0 0 repeat-x;
+        }
+
+        #page-bg2 {
+            background: url(style2/page-bg2.png) 50% 45px no-repeat;
+        }
+
+        #main-body .mainbody-surround a,
+        a {
+            color: #007399;
+        }
+
+
+        /* Horizontal Menu */
+        #horiz-menu {
+            background: url(style2/horizmenu-bg.png) 0 0 repeat-x;
+        }
+
+        #horiz-menu2 {
+            background: url(style2/horizmenu-l.png) 0 0 no-repeat;
+        }
+
+        #horiz-menu3 {
+            background: url(style2/horizmenu-r.png) 100% 0 no-repeat;
+        }
+
+        #horiz-menu .link span {
+            background: url(style2/drop-arrow.png) 4px 12px no-repeat;
+            color: #666;
+        }
+
+        #horiz-menu li.active .link span,
+        #horiz-menu li:hover .link span,
+        #horiz-menu li.sfHover .link span {
+            background: url(style2/drop-arrow.png) 4px -105px no-repeat;
+            color: #000;
+        }
+
+
+
+
+        /* Top Main Menu */
+        #horiz-menu3 {
+            padding: 0 20px;
+            height: 45px;
+            display: block;
+        }
+
+        ul#horiznav.menutop,
+        #horiz-menu ul.menutop {
+            padding: 0;
+            margin: 0;
+            position: relative;
+            z-index: 120;
+            float: left;
+            cursor: pointer;
+        }
+
+        #horiz-menu li,
+        #horiz-menu li .link {
+            position: relative;
+            display: block;
+            height: 45px;
+            line-height: 38px;
+        }
+
+        #horiz-menu li:hover .link,
+        #horiz-menu li.sfHover .link {
+            z-index: 100;
+            cursor: pointer;
+            margin: 0;
+        }
+
+        #horiz-menu .link {
+            white-space: nowrap;
+            display: block;
+            float: left;
+            height: 45px;
+            line-height: 45px;
+            font-weight: normal;
+            font-size: 14px;
+            text-decoration: none;
+            z-index: 100;
+            cursor: pointer;
+            padding: 0;
+        }
+
+        #horiz-menu li:hover .link,
+        #horiz-menu li.sfHover .link,
+        #horiz-menu li.active .link {
+            z-index: 100;
+            cursor: pointer;
+            margin: 0;
+        }
+
+        #horiz-menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #horiz-menu li {
+            display: block;
+            float: left;
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+        }
+
+        #horiz-menu li .link span {
+            display: block;
+            padding: 0 10px 0 20px;
+            height: 45px;
+        }
+
+        #horiz-menu li li .link span {
+            display: block;
+            padding: 0 10px;
+            height: 24px;
+            line-height: 24px;
+        }
+
+        /* Top Main Menu Dropdowns */
+
+        /*#horiz-menu li.parent, #horiz-menu li.active li.parent {z-index: 600;}*/
+        .menutop li:hover ul,
+        .menutop li.sfHover ul {
+            left: 3px;
+            top: 15px;
+        }
+
+        #horiz-menu ul ul li,
+        #horiz-menu ul ul li.c0,
+        #horiz-menu ul ul li.c1,
+        #horiz-menu ul ul li.c2,
+        #horiz-menu ul ul li.c3 {
+            float: left;
+            width: 173px;
+            padding: 0;
+        }
+
+        #horiz-menu li ul,
+        #horiz-menu li ul.columns-1,
+        #horiz-menu .drop-wrap.columns-1 {
+            width: 195px;
+        }
+
+        #horiz-menu li ul.columns-2,
+        #horiz-menu .drop-wrap.columns-2 {
+            width: 370px;
+        }
+
+        #horiz-menu li ul.columns-3,
+        #horiz-menu .drop-wrap.columns-3 {
+            width: 555px;
+        }
+
+        #horiz-menu li ul.columns-4,
+        #horiz-menu .drop-wrap.columns-4 {
+            width: 740px;
+        }
+
+        .menutop .drop1,
+        .menutop .drop2,
+        .menutop .drop3 {
+            height: 15px;
+        }
+
+        #horiz-menu .sfHover {
+            z-index: 700;
+        }
+
+        .menutop .drop-wrap {
+            float: none;
+            left: -999em;
+            position: absolute;
+            z-index: 700;
+            width: 100%;
+        }
+
+        .menutop li:hover .drop-wrap,
+        .menutop li.sfHover .drop-wrap {
+            left: 0px;
+            top: 33px;
+        }
+
+        .menutop li:hover li .drop-wrap,
+        .menutop li.sfHover li .drop-wrap,
+        .menutop li li:hover li .drop-wrap,
+        .menutop li li.sfHover li .drop-wrap,
+        .menutop li li li:hover li .drop-wrap,
+        .menutop li li li.sfHover li .drop-wrap {
+            top: -999em;
+        }
+
+        .menutop li li:hover .drop-wrap,
+        .menutop li li.sfHover .drop-wrap,
+        .menutop li li li:hover .drop-wrap,
+        .menutop li li li.sfHover .drop-wrap,
+        .menutop li li li li:hover .drop-wrap,
+        .menutop li li li li.sfHover .drop-wrap {
+            left: 165px;
+            top: -15px;
+        }
+
+        .menutop .submenu-animation-left,
+        .menutop .submenu-animation-right {
+            height: 100%;
+        }
+
+        #horiz-menu li.active li .link span,
+        #horiz-menu li:hover li .link span,
+        #horiz-menu li.sfHover li .link span {
+            background: none;
+        }
+    </style>
+</head>
+
+<body onLoad="date_time();">
+    <div id="top-bar">
+        <div class="wrapper">
+            <div class="top-bar-padding">
+                <div class="topbar-strip">
+                    <div class="date-block" id="date">
+
+                        <span id="date"></span>
+
+                        <script language="javascript">
+                            date_time();
+
+                            function date_time() {
+                                date = new Date;
+                                year = date.getFullYear();
+                                month = date.getMonth();
+                                months = new Array('January', 'February', 'March', 'April', 'May', 'June', 'Jully',
+                                    'August', 'September', 'October', 'November', 'December');
+                                d = date.getDate();
+                                day = date.getDay();
+                                days = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday',
+                                    'Saturday');
+                                h = date.getHours();
+                                if (h < 10) {
+                                    h = "0" + h;
+                                }
+                                m = date.getMinutes();
+                                if (m < 10) {
+                                    m = "0" + m;
+                                }
+                                s = date.getSeconds();
+                                if (s < 10) {
+                                    s = "0" + s;
+                                }
+                                result = '' + days[day] + ' ' + months[month] + ' ' + d + ' ' + year + ' ' + h + ':' +
+                                    m + ':' + s;
+                                document.getElementById('date').innerHTML =
+                                    "<font style='font-family:Arial, Helvetica, sans-serif' style='font-size:16px' color='red'>" +
+                                    result + "</font>";
+                                //document.write("<font style='font-family:Arial, Helvetica, sans-serif' style='font-size:16px' color='red'>"+result+"</font>");
+                                setTimeout('date_time();', '1000');
+                                return true;
+                            }
+                        </script>
+                    </div>
+                    <a href="index.php" id="lock-button" rel="rokbox[240 210][module=login-module]"><span id="lock-icon"
+                            class="login"></span><span>
+                            <font style="font-family:Arial, Helvetica, sans-serif">Login</font>
+                        </span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="header">
+        <div id="header-overlay">
+            <div class="wrapper">
+                <a href="/" id="logo" class="png"></a>
+                <div class=" search:43">
+                    <div id="searchmod-surround">
+                        <br />
+
+                        <!-- <div class="searchmod-top"></div>
+			<div class="searchmod-main">
+								<div id="searchmod">
+					<div class="module">
+						<form name="rokajaxsearch" id="rokajaxsearch" class="blue" action="http://domain-education.com/" method="get">
+<div class="rokajaxsearch">
+	<input id="roksearch_search_str" name="searchword" type="text" class="inputbox" value=" Search..." autocomplete="off">
+	<input type="hidden" name="searchphrase" value="any">
+	<input type="hidden" name="limit" value="">
+	<input type="hidden" name="ordering" value="newest">
+	<input type="hidden" name="view" value="search">
+	<input type="hidden" name="Itemid" value="99999999">
+	<input type="hidden" name="option" value="com_search">
+
+	
+	
+</div>
+<div id="rokajaxsearch_tmp" style="visibility:hidden;display:none;">
+-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    </div>
+    </div>
+    </div>
+
+
+    <div id="page-bg">
+        <div id="page-bg2">
+            <div class="wrapper">
+                <!--Begin Horizontal Menu-->
+
+                <div id="horiz-menu" class="moomenu">
+                    <div id="horiz-menu2">
+                        <div id="horiz-menu3">
+                            <ul class="menutop" style="overflow-x: visible; overflow-y: visible; ">
+                                <li class="item1 parent top-menu-1" id="current">
+                                    <a class="topdaddy link" href="http://www.domain-education.com">
+                                        <span>
+                                            <font style="font-family:Arial, Helvetica, sans-serif">Home</font>
+                                        </span>
+                                    </a>
+
+                                </li>
+
+
+
+                            </ul>
+                            <div class="clr"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--End Horizontal Menu-->
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <br />
+    <div id="centered">
+        <br />
+        <table align="center" id="table-5" width="900" style="font-family:Arial, Helvetica, sans-serif;">
+            <tr>
+                <td>
+                    <form action="" name="f1" method="post" autocomplete="off">
+                        <div align="center">
+                            <table width="30%" align="center" id="table-5">
+                                <tr height="50">
+                                    <td align="center">
+                                        <h3>Username </h3>
+                                    </td>
+                                    <td align="center"><input type="text" name="user" id="user" autocomplete="off"
+                                            required />
+                                    </td>
+                                </tr>
+                                <tr height="50">
+                                    <td align="center">
+                                        <h3>Password </h3>
+                                    </td>
+                                    <td align="center"><input type="password" name="pass" id="pass" autocomplete="off"
+                                            required />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" align="center"><a href="forgotpassword.php">forgot password</a></td>
+                                </tr>
+                                <tr height="50">
+                                    <td colspan="2" align="center">
+                                        <input type="submit" name="sub" value="Login" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </form>
+                    <br>
+                </td>
+            </tr>
+        </table>
+        <br>
+    </div>
+    <br>
+
+    <style type="text/css">
+        .wrapper {
+            position: relative;
+        }
+
+        div.wrapper {
+            margin: 0 auto;
+            width: 979px;
+            padding: 0;
+        }
+
+        /* Bottom Section */
+        #bottom-bg {
+            background: #fff url(style2/bottom-bg.png) 0 0 repeat-x;
+        }
+
+        #bottom-menu {
+            background: url(style2/bottom-menu-m.png) 0 0 repeat-x;
+        }
+
+        #bottom-menu2 {
+            background: url(style2/bottom-menu-l.png) 0 0 no-repeat;
+        }
+
+        #bottom-menu3 {
+            background: url(style2/bottom-menu-r.png) 100% 0 no-repeat;
+        }
+
+        #bottom-menu-overlay {
+            background: url(style2/bottom-menu-overlay.png) 50% 0 no-repeat;
+        }
+
+        #bottom-menu a {
+            color: #666;
+            background: url(style2/horizmenu-div.png) 100% 50% no-repeat;
+        }
+
+        #bottom-menu a:hover {
+            color: #000;
+        }
+
+        #bottom {
+            background: #fff;
+            color: #444;
+        }
+
+        #bottom a {
+            color: #000;
+        }
+
+        #bottom ul li a {
+            background: url(style2/dark-list-arrow.png) 0 2px no-repeat;
+        }
+
+        #bottommodules h3 {
+            color: #444;
+        }
+
+        #rocket {
+            background: url(../images/style2/rocket.png) 0 0 no-repeat;
+        }
+
+        .module-dark .moduletable h3 {
+            color: #000;
+        }
+
+
+        /* Bottom Section */
+        #bottom-bg {
+            height: 45px;
+        }
+
+        #bottom-menu-overlay {
+            height: 45px;
+            line-height: 55px;
+        }
+
+        #botbar {
+            padding: 15px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #bottom {
+            overflow: hidden;
+            padding-bottom: 15px;
+            padding-top: 15px;
+        }
+
+        #bottom-menu {
+            overflow: hidden;
+            padding: 0;
+            text-align: center;
+        }
+
+        #top-button {
+            position: absolute;
+            right: 25px;
+            top: 16px;
+            width: 90px;
+            height: 20px;
+            text-align: center;
+            line-height: 22px;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        #top-button a:hover {
+            text-decoration: none;
+        }
+
+        .top-button-spacer {
+            height: 15px;
+        }
+
+        .copyright-block {
+            width: 500px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        #copyright {
+            padding: 15px 0 8px 0;
+        }
+
+        #bottom-menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #bottom-menu ul li {
+            display: inline;
+        }
+
+        #bottom-menu ul li a,
+        #bottom-menu ul li .separator {
+            padding: 0 15px;
+            font-size: 120%;
+            font-weight: bold;
+        }
+
+        #bottom-menu ul li a:hover,
+        #bottom-menu ul li .separator:hover {
+            text-decoration: none;
+        }
+
+        #rocket {
+            width: 111px;
+            height: 15px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        #debug-mod {
+            padding: 15px;
+        }
+
+        #bottom ul {
+            margin: 0;
+            padding-left: 10px;
+            list-style: none;
+        }
+
+        #bottom ul li a {
+            padding-left: 13px;
+            padding-bottom: 5px;
+            display: block;
+        }
+
+        #bottom ul li:hover a {
+            text-decoration: none;
+        }
+
+        a#clear-cookies {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+
+    <div id="bottom-bg">
+        <div class="wrapper">
+            <div id="bottom-menu">
+                <div id="bottom-menu2">
+                    <div id="bottom-menu3">
+                        <div id="bottom-menu-overlay">
+                            <div class="moduletable">
+                                <ul class="menu-nav">
+
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="bottom">
+        <div class="wrapper">
+            <div class="footer-mod">
+                <div class="moduletable">
+                    <div align="center">&copy; 2013 All Rights Reserved with domain Edutech Pvt. Ltd.<br>
+
+                        <p style="text-align: center;"><a href="http://www.domain-education.com"><span><img
+                                        src="style2/footer_domain-e-logo.png" border="0" alt=""></span></a></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

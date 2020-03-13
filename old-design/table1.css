@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css?family=Sen&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Sen", sans-serif;
+}
+
+#table-5 {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border: 1px solid #ffffff;
+}
+
+#table-5 td,
+#table-5 th {
+  padding: 1px 5px;
+}
+
+#table-5 thead {
+  font-size: 15px;
+  text-shadow: 0 1px 0 white;
+  color: #fff;
+}
+
+#table-5 th {
+  text-align: left;
+  border-bottom: 1px solid #fff;
+}
+
+#table-5 td {
+  font-family: "Sen", sans-serif;
+
+  font-size: 12px;
+}
+
+#table-5 td:hover {
+}
+
+/* input,
+textarea,
+select {
+  background-color: #fffff;
+  border: 2px solid #dbdbdb;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  color: #000000;
+  font-weight: bold;
+} */
+
+#table-5 a {
+  color: #4d4d4d;
+  font-size: 17px;
+}
+
+#tabe-5 a:hover {
+  color: #181818 !important;
+}
+
+#user {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#user:focus,
+#user:active {
+  border: 1px solid #4d4d4d;
+  outline: none;
+}
+
+#pass {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#pass:focus,
+#pass:active {
+  border: 1px solid #4d4d4d;
+  outline: none;
+}
+
+#table-5 input[type="submit"] {
+  background-color: #4d4d4d;
+  border: 1px solid #4d4d4d;
+  color: #f5f6f7;
+  padding: 8px 70px;
+  margin: 20px 0;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 3px;
+}
+
+a {
+  color: #363636;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #696969;
+}
+
+u {
+  font-size: 40px;
+  color: #4d4d4d;
+  font-weight: 700;
+  display: block;
+  padding: 15px;
+  text-align: left;
+  border-left: 3px solid #777;
+  background-color: #eee;
+  text-decoration: none;
+  margin: 40px auto;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  width: 929px;
+}
+
+.table-head {
+  margin: 30px 0 10px 0;
+  padding-bottom: 5px;
+  font-size: 28px;
+  color: #363636;
+  padding: 5px;
+  border-bottom: 1px solid #d3d3d3;
+  display: block;
+  width: 100%;
+  font-weight: 600;
+  text-decoration: none !important;
+}
+
+#centered-2 td a {
+  font-size: 18px;
+  line-height: 30px;
+  color: #4d4d4d;
+}
+
+#centered-2 td a:hover {
+  color: #696969;
+}
+
+.sub-head {
+  font-size: 24px;
+  text-align: center;
+  color: #181818;
+}
